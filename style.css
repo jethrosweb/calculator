@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .calculator {
@@ -18,14 +19,14 @@
     background-color: transparent;
 }
 
-.calculator-input input {
+.calculator-display p {
     position: relative;
     left: 20px;
     top: 20px;
     margin-bottom: 10px;
     padding: 10px 20px;
     width: 90%;
-    height: 100px;
+    height: 70px;
 
     border: 2px solid black;
     border-radius: 3px;
@@ -43,16 +44,16 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-
 }
 
 .calc-btn {
     border: 2px solid black;
     border-radius: 3px;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
     font-size: 20px;
     background-color: rgb(206, 205, 205);
+    transition: .2s all linear;
 }
 
 .calc-btn:hover {
@@ -60,15 +61,15 @@
 }
 
 .operators {
-    background-color: rgb(253, 92, 253);
+    background-color: rgb(187, 118, 187);
 }
 
 .operators:hover {
-    background-color: rgb(255, 50, 255);
+    background-color: rgb(185, 77, 185);
 }
 
 .equals {
-    grid-row: span 4;
+    grid-row: span 3;
     background-color: rgb(255, 184, 255);
 }
 
